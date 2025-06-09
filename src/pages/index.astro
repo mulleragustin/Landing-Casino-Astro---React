@@ -1,14 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Juega from "../components/Juega";
-import Background from "../components/Background.astro";
 import Carrousel from '../components/Carrousel.astro';
+import Audio from '../public/calesita.mp3';
 ---
 
 <Layout>
   <div class="welcome-container relative min-h-screen overflow-hidden bg-black opacity-100">
     <!-- GIF centrado en el fondo -->
-    
+    <audio src="/calesita.mp3" autoplay></audio>
     <div class="inset-0 flex items-start justify-center">
       <img 
         src="/game.gif" 
