@@ -1,6 +1,6 @@
-# Landing Leo - Casino Landing Page 🎰
+# Landing Leo - Juegos Landing Page 🎰
 
-Una landing page moderna y responsiva para casino construida con Astro, React y TailwindCSS.
+Una landing page moderna y responsiva para juegos construida con Astro, React y TailwindCSS.
 
 ## 🚀 Características
 
@@ -95,7 +95,7 @@ npm run preview  # Vista previa de la build
 ### Integración WhatsApp
 El botón "Crea tu Usuario" abre WhatsApp con:
 - Número predefinido: `1234567890`
-- Mensaje: "¡Hola! Estoy interesado en conocer más sobre el casino."
+- Mensaje: "¡Hola! Quiero Jugar."
 
 ### Animaciones
 - **Float**: Elementos flotantes con rotación

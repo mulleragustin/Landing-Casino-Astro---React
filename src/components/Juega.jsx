@@ -10,22 +10,6 @@ import { FaWhatsapp  } from "react-icons/fa";
 import {RiMoneyDollarCircleLine} from "react-icons/ri";
 
 const Juega = () => {
-  const handleWhatsAppClick = () => {
-    const phoneNumber = "1234567890";
-    const message = "¡Hola! Estoy interesado en crear mi usuario en JUGÁ y GANÁ ";
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-      message
-    )}`;
-    window.open(whatsappUrl, "_blank");
-  };
-
-  const scrollToContact = () => {
-    const contactSection = document.getElementById("contact");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <>
       <section className="flex items-start justify-center px-4 pt-34 mb-6">
@@ -34,8 +18,6 @@ const Juega = () => {
             {/* Wrapper para el efecto neon */}
             <div className="neon-card-wrapper rounded-2xl sm:rounded-3xl p-1">
               <div className="bg-gradient-to-b from-gray-800 via-gray-900 to-black rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 shadow-2xl relative overflow-hidden backdrop-blur-sm">
-                
-                
                 
                 <div className="relative z-10">
                   <div className="flex justify-center mb-4 sm:mb-6">
@@ -55,14 +37,16 @@ const Juega = () => {
                 </div>
 
                 <div className="flex flex-col gap-4 sm:gap-6 justify-center items-center mt-6 sm:mt-8">
-                  <button
-                    onClick={handleWhatsAppClick}
-                    className="pulse-button group relative px-4 sm:px-4 py-3 sm:py-4 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 flex items-center space-x-2 sm:space-x-3 border-2 sm:border-4 border-green-400/50 w-60 max-w-xs sm:min-w-[200px] justify-center"
+                  <a
+                    href="https://wa.me/5493625262432?text=Hola!%20Vengo%20de%20la%20publi%20y%20quiero%20activar%20BONO25"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:cursor-pointer pulse-button group relative px-4 sm:px-4 py-3 sm:py-4 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 flex items-center space-x-2 sm:space-x-3 border-2 sm:border-4 border-green-400/50 w-60 max-w-xs sm:min-w-[200px] justify-center no-underline"
                   >
                     <div className="pulse-glow absolute inset-0 bg-green-400/30 rounded-full blur-xl group-hover:blur-2xl transition-all duration-300"></div>
                     <FaWhatsapp className="h-5 w-5 sm:h-6 sm:w-6 relative z-10" />
                     <span className="relative z-10 text-base sm:text-lg">Crea tu Usuario</span>
-                  </button>
+                  </a>
                 </div>
 
                 {/* Elementos decorativos */}
@@ -183,6 +167,15 @@ const Juega = () => {
 
           .pulse-button:hover {
             animation-play-state: paused;
+          }
+
+          /* Remover decoración de enlace */
+          a.no-underline {
+            text-decoration: none;
+          }
+
+          a.no-underline:hover {
+            text-decoration: none;
           }
         `}
       </style>

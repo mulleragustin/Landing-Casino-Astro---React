@@ -10,12 +10,5 @@ export default defineConfig({
         plugins: [
             tailwind()
         ],
-        server: {
-            allowedHosts: [
-                'https://phillips-shut-promotes-merely.trycloudflare.com',
-                'phillips-shut-promotes-merely.trycloudflare.com'
-                
-            ],
-        }
     },
 });
